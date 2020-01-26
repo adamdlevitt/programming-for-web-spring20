@@ -9,7 +9,7 @@ function setup() {
 function draw() {
     background(grid);
     // snowman legs
-    fill("f1f1f1");
+    fill("#f1f1f1");
     strokeWeight(20);
     stroke(stroke1);
     // left leg
