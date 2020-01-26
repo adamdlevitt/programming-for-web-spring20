@@ -7,7 +7,7 @@ function setup() {
     grid = loadImage("images/100px_grid.png");
 }
 function draw() {
-    background(grid);
+    // background(grid)
     // snowman legs
     fill("#f1f1f1");
     strokeWeight(20);
@@ -21,8 +21,9 @@ function draw() {
     //head
     ellipse(500, 200, 200);
     // hat brim
+    fill("#da6416");
     stroke(stroke2);
-    strokeWeight(40);
+    strokeWeight(20);
     line(400, 120, 600, 120);
     // hat body
     quad(400, 50, 600, 50, 550, 120, 450, 120);
@@ -31,6 +32,8 @@ function draw() {
     strokeWeight(50);
     point(425, 200);
     point(575, 200);
+    // nose
+
     // mouth
     noFill();
     strokeWeight(10);
