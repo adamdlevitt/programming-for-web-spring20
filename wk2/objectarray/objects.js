@@ -1,4 +1,4 @@
-let gameNumber = prompt('Enter a number: 1, 2, or 3 below and I will tell you about a game.')
+let gameNumber = prompt('Enter a number: 0, 1, or 2 below and I will tell you about a game.')
 const gamesList = [
     {title: 'Settlers of Catan', type: 'board game', numberOfPlayers: '3-4 people'},
     {title: 'Kings Cup', type: 'drinking game', numberOfPlayers: '8-12 people'},
