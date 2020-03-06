@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+  </head>
+
+  <body>
+    <div id="llamaAlpaca" v-cloak>
+        <h1 v-bind:style="pageHeader">Llamas vs. Alpacas 2: The Final Showdown</h1>
+        <p v-bind:class="classObject"></p>
+        <a v-bind:href="llamaWiki">Llama Info</a>
+        <a v-bind:href="alpacaWiki">Alpaca Info</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="lib/script.js"></script>
+  </body>
+</html>
