@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Show and Tell: Must-Read Comics</title>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="list" v-cloak>
+      <h1>Must-Read Comics</h1>
+      <table>
+        <thead>
+          <th>Comic</th>
+          <th>Author</th>
+          <th>Publisher</th>
+          <th>Genre</th>
+          <th>Summary</th>
+        </thead>
+        <tbody>
+          <tr v-for="(item, index) in comics" v-bind:class="{even: (index +1) % 2 === 0, odd: (index + 1) % 2 !==0}">
+            <td>{{item.comic}}</td>
+            <td>{{item.author}}</td>
+            <td>{{item.publisher}}</td>
+            <td>{{item.genre}}</td>
+            <td>{{item.summary}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+    <script src="lib/script.js"></script>
+  </body>
+
+</html>

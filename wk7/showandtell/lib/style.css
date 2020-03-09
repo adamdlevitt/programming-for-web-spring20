@@ -1,0 +1,38 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    color: black;
+    }
+    
+    h1{
+    color:  orangered;
+    padding-left:20px;;
+    }
+    
+    table{
+    border-collapse: collapse;
+    align-self: center;
+    padding: 50px;
+    }
+    
+    table, th, td{
+    border:2px solid black;
+    }
+    
+    th{
+    text-align: left;
+    padding: 20px;
+    background-color: orangered;
+    }
+    
+    td{
+    padding: 20px;
+    }
+    
+    .even{
+        background-color: lightblue;
+    }
+    
+    .odd{
+    background-color: lightseagreen;
+    }
