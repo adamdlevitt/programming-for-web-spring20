@@ -12,40 +12,84 @@ h3 {
   font-size: 24px;
 }
 body {
-  background-color: #fefef1;
+  background-color: #ffffffd7;
   width: 100%;
-  max-width: 1080px;
-  margin: 0 auto;
 }
 .collectionWrapper {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 .collectionRow {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  background-color: #ccc;
+  background-color: lightseagreen;
   border-bottom: 1px solid #111;
 }
 .collectionRow.odd {
-  background-color: #eee;
+  background-color: lightblue;
 }
 .collectionRow.header {
-  background-color: #fff;
+  min-width: 144px;
+  background-color: lightgreen;
 }
+
 .collectionRow.owned {
-  color: maroon;
+  color: red;
   font-weight: 600;
+}
+
+.comic-title {
+  min-width: 500px;
+}
+
+.comic-author {
+  min-width: 500px;
+}
+
+.comic-publisher {
+  min-width: 500px;
+}
+
+.comic-genre {
+  min-width: 500px;
+}
+
+.comic-summary {
+  min-width: 500px;
+  max-width: 500px;
+}
+
+.collected {
+  min-width: 500px;
+}
+
+.actions {
+  min-width: 500px;
 }
 
 .cell {
   padding: 10px;
-  width: 120px;
   text-align: center;
 }
-.console-image img {
+
+.new-console-form {
+  margin: 20px 0;
+}
+
+.new-comic-form fieldset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.new-comic-form div {
+  margin: 10px 0;
+  width: 120px;
+}
+
+.new-comic-form input {
+  max-width: 110px;
   display: block;
-  max-width: 160px;
 }
