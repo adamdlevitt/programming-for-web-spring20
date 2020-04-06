@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <title>Comics You Should Read</title>
+  </head>
+
+  <body>
+   <h1>Comic Books Your Should Read (collected and not collected)</h1>
+   <div id="app">
+    <div class="collectionWrapper">
+            <div class="collectionRow header">
+                    <div class="cell comic-title">Title</div>
+                    <div class="cell comic-author">Author</div>
+                    <div class="cell comic-publisher">Publisher</div>
+                    <div class="cell comic-genre">Genre</div>
+                    <div class="cell comic-summary">Summary</div>
+                    <div class="cell collected">Part of the collection</div>
+                </div>
+                <my-component :title="comic.title" :author="comic.author" :publisher="comic.publisher" :genre="comic.genre" :summary="comic.summary" :collected="comic.collected" v-for="comic in comics"></my-component>
+        </div>
+        <form v-on:submit.prevent="submitHandler" class="new-console-form">
+          <fieldset>
+            <legend>Add a comic to the collection</legend>
+            <div>
+              <label for="title">Title</label>
+              <input id="title" type="text" v-model="newComicObj.title">
+          </div>
+          <div>
+              <label for="author">Author</label>
+              <input id="author" type="text" v-model="newComicObj.author">
+          </div>
+          <div>
+              <label for="publisher">Publisher</label>
+              <input id="publisher" type="text" v-model="newComicObj.publisher">
+          </div>
+          <div>
+              <label for="genre">Genre</label>
+              <input id="genre" type="text" v-model="newComicObj.genre">
+          </div>
+          <div>
+              <label for="summary">Summary</label>
+              <input id="summary" type="text" v-model="newComicObj.summary">
+          </div><div>
+              <label for="collected">Collected</label>
+              <input id="collected" type="checkbox" v-model="newComicObj.collected">
+          </div>
+          <div class="cell actions">
+          </div>
+          <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <script src="lib/script.js"></script>
+  </body>
+</html>
