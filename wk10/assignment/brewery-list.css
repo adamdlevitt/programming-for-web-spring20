@@ -1,0 +1,30 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: cornsilk;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+.brewery-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.brewery {
+    border: 3px solid black;
+    background: burlywood;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.brewery h3 {
+    margin: 0;
+    font-size: 14px; 
+}
